@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/fav/site.webmanifest">
+    <title>Jogo da Forca Alura</title>
+</head>
+<body>
+    <header id="header">
+        <div id="left-header-icon">
+            <img id="logo" src="assets/img/logo.svg" alt="logo">
+            <label>Jogo da Forca Alura</label>
+        </div>
+        <div id="right-header-icon">
+            <button id="addWord">Adicionar nova palavra</button>
+        </div>
+    </header>
+    <main>
+        <section id="new_word" class="hide">
+            <div class="container">
+                <div class="text_input">
+                    <label class="label_new_word">Palavra:</label>
+                    <input type="text" id="txt_addWord" name="word" />
+                    <label class="label_new_word">Dica:</label>
+                    <input type="text" id="txt_addClue" name="tip" />
+                </div>
+                <div class="btns_addword">
+                    <button id="btn_save" type="button" value="Enviar"> Salvar </button>
+                </div>
+            </div>
+            <div id="div_new_word" class="d-none">
+                <label id="addWord_label"><label style="color:red"></label>
+            </div>
+        </section>
+        <div id="dark" class="d-none">
+            <section id="modal">
+                <div>
+                    <p id="modal-msg"></p>
+                </div>
+                <div id="m-button">
+                    <button id="btn-modal">Jogar novamente</button>
+                </div>
+            </section>
+        </div>
+        <section id="gallows">
+            <div id="canva">
+                <canvas width="600" height="400" />
+            </div>
+            <div id="word">
+                <!-- Palavra -->
+            </div>
+            <div id="btns">
+                <!-- botões -->
+            </div>
+        </section>
+        <section id="d-tip">
+            <label id="tip">
+                <!-- Dica -->
+            </label>
+        </section>
+    </main>
+ 
+            <label id="lb-footer">&copy; Leonardo De Sousa Candido</label>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/variable.js"></script>
+    <script src="js/app.js"></script>
+</html>
